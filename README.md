@@ -60,7 +60,7 @@ Be aware that running the LDA ensemble from scratch will take many days of compu
 
 ## License
 
-This project is licensed under the BSD-3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the BSD License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
