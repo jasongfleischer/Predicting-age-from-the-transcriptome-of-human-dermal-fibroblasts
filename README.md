@@ -29,7 +29,7 @@ While it may work with different versions of these packages, the software was te
 
 ### Using this software
 
-Open the notebook "" in Jupyter.
+Open the notebook "Generate panels for figure.ipynb" in Jupyter.
 
 To regenerate figures from the saved runs, simply select "Cell -> Run All" from the pull down menus.
 
