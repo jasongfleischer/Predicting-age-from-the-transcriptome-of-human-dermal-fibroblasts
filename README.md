@@ -64,5 +64,9 @@ This project is licensed under the BSD License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-As always, we stand on the shoulders of giants.  This project would not have been possible without the  many developers of scikit-learn, scipy, numpy, pandas, seaborn, matplotlib, jupyter, and python.
+As always, we stand on the shoulders of giants.
+
+This research would not have been possible without the ideas and backing of Martin Hetzer and Saket Navlakha.  Robbie Schulte and Hannah Tsai did an enormous amount of bench work to make this happen.  The real bioformaticians on this paper are Max Shokirev and Ling Huang, their expertise kept me from many mistakes.   And none of this would exist without the many researchers who have worked to understand the difference between biological age and chronological age over the years.
+
+The computational end of this research owed a huge debt to many pioneers of machine learning and statistical modelling.  The programming of this project would have been an order of magnitude harder  without the  many developers of scikit-learn, scipy, numpy, pandas, seaborn, matplotlib, jupyter, and python.
 
