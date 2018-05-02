@@ -1,0 +1,193 @@
+New Name,Original Name,Tracking ID,Coriell ID,Condition,Gender,Age,Tissue Type,Race/Ethnicity,md5sum,Lab notes
+00_1,160615-SE50/Hetzer_Robbie/6C_S5_R1_001.fastq.gz,9,AG21708,Normal,Male,1 DA,Skin; Foreskin,Unknown,f1a1c8ccaf7e6ecb918f011e9c1f1e28,
+00_2,160615-SE50/Hetzer_Robbie/6D_S17_R1_001.fastq.gz,10,AG22153,Normal,Male,1 DA,Skin; Foreskin,WHITE/EAST INDIAN,072ac019ba28941a14096a99ca7abd52,
+00_3,160615-SE50/Hetzer_Robbie/6E_S29_R1_001.fastq.gz,11,AG21754,Normal,Male,1 NB,Skin; Foreskin,Unknown,a7643de7f0543caa4f588d369f68dea1,
+00_4,160615-SE50/Hetzer_Robbie/6F_S41_R1_001.fastq.gz,12,AG21753,Normal,Male,1 NB,Skin; Foreskin,Unknown,5cc2eb9713fc939b8cc6dfd2ba317135,
+000fw12_1,161025-SE75/Hetzer_Arkaitz/HT1_S1_R1_001.fastq.gz,13,AG04449,Normal,Male,12FW,Skin; Buttock-thigh,Unknown,168d27e30db1489e3ff392c13f6ee46f,
+000fw15_1,160615-SE50/Hetzer_Robbie/1A_S1_R1_001.fastq.gz,1,AG04431,Normal,Female,15FW,Skin; Buttock-thigh,Unknown,e5af2432c96659a0004fbb037b1775cb,
+000fw16_1,160615-SE50/Hetzer_Robbie/1B_S13_R1_001.fastq.gz,2,AG04392,Normal,Female,16 FW,Skin; Buttock-thigh,Unknown,b11c8979ac2fa4417933e1700fc46572,
+000fw16_2,160615-SE50/Hetzer_Robbie/1C_S25_R1_001.fastq.gz,3,AG06561,Normal,Female,16 FW,Skin; Sacrum,Caucasian,8e558fd40ec97fc4a95123f3af119a83,
+000fw16_3,160615-SE50/Hetzer_Robbie/1D_S37_R1_001.fastq.gz,4,AG04451,Normal,Female,16 FW,Skin; Buttock-thigh,Black,cc37d82bf8a30be6d281658e3b9171f7,
+000fw17_1,160615-SE50/Hetzer_Robbie/1E_S49_R1_001.fastq.gz,5,AG04525,Normal,Male,17 FW,Skin; Buttock,Unknown,673c76d132d5fd75250e6402c2ea5e99,
+000fw18_1,160617-SE50/Hetzer_Robbie/1F_S97_R1_001.fastq.gz,6,AG06557,Normal,Male,18 FW,Skin; Sacrum,Black,eedbc31894d1ee0d0018367b2b12c81c,
+000fw19_1,160615-SE50/Hetzer_Robbie/6A_S76_R1_001.fastq.gz,7,AG06559,Normal,Female,19 FW,Skin; Sacrum,Unknown,eb62c98fafface37d2de1586bd48c5f2,
+000fw19_2,160615-SE50/Hetzer_Robbie/6B_S88_R1_001.fastq.gz,8,AG04433,Normal,Male,19 FW,Skin; Buttock-thigh,Unknown,faf8b47621fc3b12593991e58d119097,
+01_1,161025-SE75/Hetzer_Arkaitz/HT2_S2_R1_001.fastq.gz,14,AG08498,Normal,Male,1yr,Skin; Foreskin,Asian,b43547957c645e270bf2c8d4702337c9,
+01_2,170102-SE75/Hetzer_Toby/AI1_S6_R1_001.fastq.gz,79,GM05659,Normal,male,1yr,skin; chet,Caucasian,cd6a5a80c19bd191c9d1a92a25ad5f3c,
+02_1,170102-SE75/Hetzer_Toby/AI2_S7_R1_001.fastq.gz,80,GM00969,Normal,female,2yr,Skin; Unspecified,Caucasian,bb3543d340e81308ac306a0c11a47f0b,
+03_1,170102-SE75/Hetzer_Toby/AI3_S8_R1_001.fastq.gz,81,GM05565,Normal,male,3yr,skin; Inguinal area,Latino/Hispanic,fdf1f89af481fa14a373b31550b48cf7,
+03_2,170102-SE75/Hetzer_Toby/AI4_S9_R1_001.fastq.gz,82,GM00498,Normal,male,3yr,Skin; Unspecified,Unknown,cbc4d75673e712fcd6c1a02dee44d848,
+05_1,170222-SE75/Hetzer_Hannah/HT1_S1_R1_001.fastq.gz,83,GM05381,Normal,Male,5yr,Skin; Umbilical Cord Area,Black,2086d229562c51f981d7d79b7af189d2,
+06_1,170222-SE75/Hetzer_Hannah/HT2_S2_R1_001.fastq.gz,84,GM05400,Normal,Male,6yr,Skin; inguinal area,Black,77d9c2c6882db565f0c41bcce725a2b1,
+07_1,170222-SE75/Hetzer_Hannah/HT3_S3_R1_001.fastq.gz,85,GM05757,Normal,Male,7yr,Skin; inguinal area,Black,72afb400f40608736d38653c65006a24,
+07_2,170222-SE75/Hetzer_Hannah/HT4_S4_R1_001.fastq.gz,86,GM00409,Normal,Male,7yr,Skin; Unspecified,Caucasian,43ef696e832c7609e93c0c70fc09fe1f,
+08_1,170222-SE75/Hetzer_Hannah/HT5_S5_R1_001.fastq.gz,88,GM08398,Normal,Male,8yr,Skin; Inguinal area,Caucasian,9c02ec414f2714f8073f2763d58230f5,
+08_2,170302-SE75/Hetzer_Hannah/87_S1_R1_001.fastq.gz,87,GM00499,Normal,Male,8yr,Skin; Unspecified,Caucasian,15a57998d8c2c27f3a0ba6f3b28cceb2,
+09_1,170222-SE75/Hetzer_Hannah/HT6_S6_R1_001.fastq.gz,89,GM00038,Normal,Female,9yr,Skin; unspecified,Black,3676b29b1ed5cdaf12dee20cac755d8c,
+10_1,170222-SE75/Hetzer_Hannah/HT7_S7_R1_001.fastq.gz,90,GM03349,Normal,Male,10yr,Skin; Unspecified,Black,e79f4601b8fb6a699c91ca031cb219eb,
+10_2,170222-SE75/Hetzer_Hannah/HT8_S8_R1_001.fastq.gz,91,GM00500,Normal,Male,10yr,Skin; Unspecified,Caucasian,581a9ae8633a1c77389b959c50a803d0,
+11_1,170102-SE75/Hetzer_Toby/AI5_S10_R1_001.fastq.gz,92,GM01652,Normal,female,11yr,skin; arm,Caucasian,8ab055759ef872f3d23237ac08c9b40f,
+11_2,170102-SE75/Hetzer_Toby/AI6_S11_R1_001.fastq.gz,93,GM01582,Normal,female,11yr,skin; arm,Caucasian,b79b1e7d7c75970263e8bf965b016587,
+12_1,161025-SE75/Hetzer_Arkaitz/HT3_S3_R1_001.fastq.gz,15,AG16409,Normal,Male,12yr,Skin; Unspecified,Caucasian,439427e4dda990173d0a10bc6360394c,
+12_2,170102-SE75/Hetzer_Toby/AI7_S12_R1_001.fastq.gz,94,GM00316,Normal,male,12yr,skin; arm,Caucasian,02fb841da7daf77a01f35768f3a45187,
+13_1,170222-SE75/Hetzer_Hannah/HT9_S9_R1_001.fastq.gz,95,GM02037,Normal,Male,13yr,Skin; Arm,WhiTE/EAST INDIAN,8bf10610719b4bf82e0d0484de56bc6c,
+16_1,170222-SE75/Hetzer_Hannah/HT10_S10_R1_001.fastq.gz,97,GM07532,Normal,Female,16yr,Skin; Unspecified,Unknown,873f65934bde2883d2bc1a04366473f5,
+17_1,170222-SE75/Hetzer_Hannah/HT11_S11_R1_001.fastq.gz,98,GM07753,Normal,Male,17yr,Skin; Unspecified,Caucasian,1409457ff71b8c85cad5c33e1b69990a,
+17_2,170222-SE75/Hetzer_Hannah/HT12_S12_R1_001.fastq.gz,99,GM07492,Normal,Male,17yr,Skin; Unspecified,Caucasian,206b4fcfa2d2f7c4deee08fcdab4f8b0,
+19_1,170302-SE75/Hetzer_Hannah/101_S2_R1_001.fastq.gz,101,GM08399,Normal,Female,19yr,Skin; Unspecified,Caucasian,2d075a4c17f3891a73fe4163fd4cb197,
+19_2,170302-SE75/Hetzer_Hannah/102_S3_R1_001.fastq.gz,102,GM04501,Normal,Male,19yr,Skin; Unspecified,Caucasian,b3a56fa4e67e4dad51f4702c94d6cff4,
+19_3,170302-SE75/Hetzer_Hannah/103_S4_R1_001.fastq.gz,103,GM23973,Normal,Male,19yr,Skin; Unspecified,Caucasian,22dc026017bef0144dc124549a9fed5c,
+19_4,170302-SE75/Hetzer_Hannah/104_S5_R1_001.fastq.gz,104,GM03377,Normal,Male,19yr,Skin; Arm,Caucasian,068aa6ea54d2b219388c646d583de2a9,
+20_1,170302-SE75/Hetzer_Hannah/105_S6_R1_001.fastq.gz,105,GM03440,Normal,Male,20yr,Skin; Leg,Caucasian,b565d25355e0e361ff55f646dc1dd3da,
+20_2,170102-SE75/Hetzer_Toby/AI8_S13_R1_001.fastq.gz,106,GM04505,Normal,Female,20yr,skin; arm,Caucasian,5cb0a3847e99998b9ddf949b5ec16098,
+21_1,170803_SE75/Hetzer_Robbie/RS7_S7_R1_001.fastq.gz,162,GM03523,Normal,Male,21YR,Skin;Neck,Caucasian,e9a954674dd44ae1bde7fa584dd0999e,
+21_ism,170803_SE75/Hetzer_Robbie/RS17_S17_R1_001.fastq.gz,185,162 iSM,iSM,Male,21 YR,Skin; Neck,Caucasian,f23eb14a6a65d7cc32379d81fe36cc5f5,induced smooth muscle -antibody selected
+22_1,160412-SE75/Hetzer_Robbie/AR1/A1_S1_R1_001.fastq.gz,146,22RC-APR12;16,lab derived fibroblasts,Male,22yr,Skin; Arm,Caucasian,e218f3976787bc63ed45ed092eb13a91,Lab derived fibroblasts-clustered differently
+22_2,170803_SE75/Hetzer_Robbie/RS1_S1_R1_001.fastq.gz,155,GM23815,Normal,Male,22yr,Skin; Unspecified,Caucasian,4cba8b32f856797dd050a614cf590ee4,
+22_ism,170803_SE75/Hetzer_Robbie/RS13_S13_R1_001.fastq.gz,179,155 iSM,iSM,Male,22 YR,Skin; Unspecified,Caucasian,4866f78a5601d5aaf96f7744084cc56a,induced smooth muscle -antibody selected
+23_1,160412-SE75/Hetzer_Robbie/AR6/B1_S6_R1_001.fastq.gz,147,23YA-APR12;16,lab derived fibroblasts,Male,23yr,Skin; Arm,Middle Eastern,7128edfd336cc2a954366112d43d49dd,Lab derived fibroblasts-clustered differently
+23_3,170803_SE75/Hetzer_Robbie/RS5_S5_R1_001.fastq.gz,159,GM03234,Normal,Male,23YR,Skin; Arm,American Indian,7aa58a0a27ea99aef6fca1837620d882,
+23_ism_sorted,170802_SE75/Hetzer_Hannah/HT2_S2_R1_001.fastq.gz,191,23 YA iSM sorted ,iSM(sorted),Male,23 YR,Skin; Arm,Middle Eastern,ac341a6ad05bfcb8539395d51b429664,induced smooth muscle-sorted
+23_PDL33,160615-SE75/Hetzer_Toby/RJS9/23YA_PDL33_S9_R1_001.fastq.gz,407,23YA-PDL33,lab derived fibroblasts,Male,23yr,Skin; Arm,Caucasian,33906e56c0b3e5a5dca2c0701ba979ea,Lab derived fibroblasts-clustered differently- grown to PDL33 to test culturing effects
+24_1,161031-SE75/Hetzer_Arkaitz/AI1_S15_R1_001.fastq.gz,16,AG11732,Normal,Female,24 YR,Skin; Arm,Caucasian,df7dafc18b5f1404e0aad50f32b7edc7,
+24_2,170803_SE75/Hetzer_Robbie/RS4_S4_R1_001.fastq.gz,158,GM03652,Normal,Male,24YR,Skin; Arm,Caucasian,d8eba272c9a1aecc3e9d85432b425b0d,
+25_1,161031-SE75/Hetzer_Arkaitz/AI2_S16_R1_001.fastq.gz,17,AG09975,Normal,Male,25 YR,Skin; Arm,caucasian,26c37fd8d11bd9989ed5d2eeea8908d8,
+25_2,161103-SE75/Hetzer_Arkaitz/AI13_S13_R1_001.fastq.gz,18,AG11735,Normal,Female,25 YR,Skin; Arm,caucasian,3a9a36fa55ab65a1c77ffbd92023c032,
+25_3,160412-SE75/Hetzer_Robbie/AR11/C1_S11_R1_001.fastq.gz,148,25MH-APR12;16,lab derived fibroblasts,Female,25yr,Skin; Arm,Asian,578dbb173d38ea9f7d79582f7e517a62,Lab derived fibroblasts-clustered differently
+25_5,170803_SE75/Hetzer_Robbie/RS2_S2_R1_001.fastq.gz,156,GM03651,Normal,Female,25yr,Skin; Arm,Caucasian,033d3c0ce8cc570e7304d3d5b9ca1251,
+25_ism,170803_SE75/Hetzer_Robbie/RS14_S14_R1_001.fastq.gz,180,156 iSM,iSM,Female,25 YR,Skin; Arm,Caucasian,3cf6150b81b3667b20968be2867930a5,induced smooth muscle -antibody selected
+25_ism_sorted,170802_SE75/Hetzer_Hannah/HT7_S7_R1_001.fastq.gz,196,25MH iSM sorted,iSM(sorted),Female,25 YR,Skin; Arm,Asian,1c1dbd131705d9477a715eff51d78548,induced smooth muscle-sorted
+26_1,161103-SE75/Hetzer_Arkaitz/AI14_S14_R1_001.fastq.gz,19,AG09860,Normal,Male,26 YR,Skin; Arm,Caucasian,151df0adb386370e5a19c979ce3b8125,
+26_2,161103-SE75/Hetzer_Arkaitz/AI15_S15_R1_001.fastq.gz,20,AG07124,Normal,Female,26 YR,Skin; Arm,Caucasian,9848f653cb67f3f638f18a601c828d32,
+26_4,170803_SE75/Hetzer_Robbie/RS6_S6_R1_001.fastq.gz,160,GM00726,Normal,Female,26yr,Skin; Arm,Asian,59b1722b3ed88017d7e4424811d3a7d8,
+26_ism_sorted,170802_SE75/Hetzer_Hannah/HT3_S3_R1_001.fastq.gz,192,20 iSM sortedAG07124,iSM(sorted),Female,26 YR,Skin; Arm,Caucasian,05f61cd979e9cd6c0365c27a70b541f8,induced smooth muscle-sorted
+28_1,161103-SE75/Hetzer_Arkaitz/AI16_S16_R1_001.fastq.gz,21,AG09559,Normal,Male,28 YR,Skin; Arm,Caucasian,c39fcfb8d1553e7ac82ae1d6bfa746ed,
+29_1,161103-SE75/Hetzer_Arkaitz/AI17_S17_R1_001.fastq.gz,22,AG04054,Normal,Male,29 YR,Skin; Arm,Caucasian,a936ed147643a9289549eb263cd66181,
+29_2,161103-SE75/Hetzer_Arkaitz/AI18_S18_R1_001.fastq.gz,23,AG07478,Normal,Male,29 YR,Skin; Arm,Caucasian,b0a14ab68f9badf3e18371a3af730ed2,
+29_3,170803_SE75/Hetzer_Robbie/RS3_S3_R1_001.fastq.gz,157,GM00495,Normal,Male,29yr,Skin; Buttock,Unknown,92bd73957f0d7616f6006df62bc88150,
+29_ism,170803_SE75/Hetzer_Robbie/RS16_S16_R1_001.fastq.gz,184,161 iSM,iSM,Female,29 YR,Skin; Unspecified,Caucasian,012095d7c2a35bb3e9be0eb7d0b9c64f,induced smooth muscle -antibody selected
+30_1,161103-SE75/Hetzer_Arkaitz/AI19_S19_R1_001.fastq.gz,24,AG13153,Normal,Male,30 YR,Skin; Arm,Caucasian,f6e773b4330b61834d15bd236f3aed4a,
+30_2,161103-SE75/Hetzer_Arkaitz/AI20_S20_R1_001.fastq.gz,25,AG09599,Normal,Female,30 YR,Skin; Arm,Caucasian,5f869f7d7093b5a187cb4e5a485f8252,
+30_3,161103-SE75/Hetzer_Arkaitz/AI21_S21_R1_001.fastq.gz,26,AG13234,Normal,Male,30 YR,Skin; Arm,Caucasian,fbef749a71620ea960020c7a186276fc,
+30_4,161103-SE75/Hetzer_Arkaitz/AI22_S22_R1_001.fastq.gz,27,AG09605,Normal,Male,30 YR,Skin; Arm,Caucasian,16a52f7613a9b58657e841558d8fb5d2,
+31_1,170302-SE75/Hetzer_Hannah/107_S7_R1_001.fastq.gz,107,GM04503,Normal,Female,31yr,skin; Unspecified,Caucasian,2411f6c9d5e85bf65035c7667a055100,
+31_2,170102-SE75/Hetzer_Toby/AI9_S14_R1_001.fastq.gz,108,GM04504,Normal,female,31yr,Skin; Unspecified,Caucasian,70e613a386353f256dcfc9289ef1cc47,
+32_1,170102-SE75/Hetzer_Toby/AI10_S15_R1_001.fastq.gz,109,GM08402,Normal,male,32yr,Skin; Unspecified,Unknown,39e835e84a9cbcac0e58c6fd38d90e2b,
+32_2,170102-SE75/Hetzer_Toby/AI11_S16_R1_001.fastq.gz,110,GM00043,Normal,female,32yr,Skin; Unspecified,Black/Puerto Rican,fb200512934b7a64a7ee863051555eb8,
+33_1,170302-SE75/Hetzer_Hannah/111_S8_R1_001.fastq.gz,111,GM02673,Normal,Male,33yr,skin; Unspecified,Caucasian,2cb47e05754adec012e8ae9bf280b52a,
+33_2,170302-SE75/Hetzer_Hannah/112_S9_R1_001.fastq.gz,112,GM23971,Normal,Male,33yr,Skin; Unspecified,Caucasian,a8f19cae81675783c06235bcfa45a940,
+37_1,170302-SE75/Hetzer_Hannah/114_S10_R1_001.fastq.gz,114,GM08400,Normal,Female,37yr,Skin/Blood,Unknown,433e69951c246e1f03712a2193f7eeb7,
+37_2,170302-SE75/Hetzer_Hannah/115_S11_R1_001.fastq.gz,115,GM01650,Normal,Female,37yr,Skin; Arm,Unknown,d734d7c445b98bba7f1f9b38b725204f,
+37_3,170302-SE75/Hetzer_Hannah/117_S12_R1_001.fastq.gz,117,GM01653,Normal,Male,37yr,skin; Arm,Caucasian,bb7a546a2a8b1aea380543217917c88a,
+39_1,170302-SE75/Hetzer_Hannah/118_S13_R1_001.fastq.gz,118,GM01717,Normal,Male,39yr,skin; Arm,Caucasian,f694efe44ad0dded6e263544ce0395d8,
+41_1,161025-SE75/Hetzer_Arkaitz/HT4_S4_R1_001.fastq.gz,28,AG11745,Normal,Female,43yr,Skin; Arm,Caucasian,61f881452352fca4b11e144b6d9e70df,
+41_2,161025-SE75/Hetzer_Arkaitz/HT5_S5_R1_001.fastq.gz,29,AG13244,Normal,Male,44yr,Skin; Arm,Caucasian,8098d08e406c28b4e802a9e51880baf7,
+42_1,161025-SE75/Hetzer_Arkaitz/HT6_S6_R1_001.fastq.gz,30,AG13967,Normal,Male,41yr,Skin; Arm,Caucasian,f4a729cc8d13249a231b1ee61707f06a,
+43_1,161025-SE75/Hetzer_Arkaitz/HT7_S7_R1_001.fastq.gz,31,AG12989,Normal,Male,47yr,Skin; Arm,Caucasian,dcfc36262e84cbc6545ba9784cc050ef,
+43_2,161025-SE75/Hetzer_Arkaitz/HT8_S8_R1_001.fastq.gz,32,AG12493,Normal,Female,50yr,Skin; Arm,Caucasian,46f99c4639ee97ae47f1be2b9154b4fa,
+44_1,161025-SE75/Hetzer_Arkaitz/HT9_S9_R1_001.fastq.gz,33,AG11556,Normal,Male,46yr,Skin; Arm,Caucasian,a79d87f9a07fa4e532d211b53598eaf1,
+45_1,161025-SE75/Hetzer_Arkaitz/HT10_S10_R1_001.fastq.gz,34,AG12602,Normal,Male,50yr,Skin; Arm,Caucasian,088a19286c3af0e646ae37bcf8624a19,
+46_1,161025-SE75/Hetzer_Arkaitz/HT11_S11_R1_001.fastq.gz,35,AG13066,Normal,Female,42yr,Skin; Arm,Caucasian,5074a31ff345519a1687f08925419473,
+46_2,161025-SE75/Hetzer_Arkaitz/HT12_S12_R1_001.fastq.gz,36,AG13962,Normal,Male,47yr,Skin; Arm,Caucasian,55109592bd00220fec9da37575f1cef1,
+46_3,160419-SE75/Hetzer_Arkaitz/HT07/1_S7_R1_001.fastq.gz,152,MH01 Martin,lab derived fibroblasts,Male,46yr,Skin; Arm,Caucasian,a0436b4933d8ff1d7bbbccde039cbf39,Lab derived fibroblasts-clustered differently
+47_1,161025-SE75/Hetzer_Arkaitz/HT13_S13_R1_001.fastq.gz,37,AG16358,Normal,Female,41yr,Skin; Arm,Caucasian,48c6ff3933cf3fcdeb9570b78093b660,
+48_1,161031-SE75/Hetzer_Arkaitz/AI3_S17_R1_001.fastq.gz,38,AG04063,Normal,Male,43yr,Skin; Arm,Caucasian,6e84ebbddc1328408c0dffc6bbe67294,
+48_2,161031-SE75/Hetzer_Arkaitz/AI4_S18_R1_001.fastq.gz,39,AG11698,Normal,Male,44yr,Skin; Arm,Caucasian,dd7ddcb002be4ac6b1fbd751c6843848,
+49_1,161031-SE75/Hetzer_Arkaitz/AI5_S19_R1_001.fastq.gz,40,AG11484,Normal,Male,45yr,Skin; Arm,Caucasian,ce639cdb274adcf67e9853fcc05f0454,
+49_2,161031-SE75/Hetzer_Arkaitz/AI6_S20_R1_001.fastq.gz,41,AG11162,Normal,Male,46yr,skin; Arm,Caucasian,4537819f4d528bc7a5bd349592427b5e,
+49_3,161031-SE75/Hetzer_Arkaitz/AI7_S21_R1_001.fastq.gz,42,AG12954,Normal,Male,46yr,Skin; Arm,Caucasian,8c6f1298959e7d59a46e629db17c4ae9,
+50_1,161031-SE75/Hetzer_Arkaitz/AI8_S22_R1_001.fastq.gz,43,AG11154,Normal,Male,47yr,Skin; Arm,Caucasian,ad8127c83487c33c7bab0adf8124c541,
+51_1,170302-SE75/Hetzer_Hannah/120_S14_R1_001.fastq.gz,120,GM00967,Normal,Male,51yr,skin; Arm,Caucasian,21e3cf268baa3dc9e1833caf630d9965,
+52_2,170302-SE75/Hetzer_Hannah/121_S15_R1_001.fastq.gz,121,GM23967,Normal,Male,52yr,skin; Unspecified,Caucasian,b87ff429bd68a2d74969d77d7adc9376,
+55_1,170302-SE75/Hetzer_Hannah/122_S16_R1_001.fastq.gz,122,GM23248,Normal,Male,55yr,Skin; Arm,Caucasian,66caf834b4d224c86771e4196db1e5e5,
+57_1,170102-SE75/Hetzer_Toby/AI12_S17_R1_001.fastq.gz,123,GM13335,Normal,male,57yr,Skin; Unspecified,Caucasian,cc8a4f1a88d79248921e6738379386df,
+60_1,170302-SE75/Hetzer_Hannah/124_S17_R1_001.fastq.gz,124,GM04260,Normal,Male,60yr,skin; Unspecified,Caucasian,6cb50283c60df95cd5534d4c7ac7e5c6,
+61_1,161103-SE75/Hetzer_Arkaitz/AI1_S1_R1_001.fastq.gz,44,AG13225,Normal,Male,61 YR,Skin; Arm,Caucasian,c02bd00545c7285fc213779c4921240f,
+62_1,161103-SE75/Hetzer_Arkaitz/AI2_S2_R1_001.fastq.gz,45,AG12597,Normal,Female,62YR,Skin; Arm,Caucasian,a4444c39beca050aa9b09bbe8dc52d8c,
+62_2,161103-SE75/Hetzer_Arkaitz/AI3_S3_R1_001.fastq.gz,46,AG11357,Normal,Female,62YR,Skin; Arm,Caucasian,cca221df45be88b40b1c3d66e4c1b77c,
+62_3,160412-SE75/Hetzer_Robbie/AR16/D1_S16_R1_001.fastq.gz,149,62MP-APR1216,lab derived fibroblasts,Male,62yr,Skin; Arm,Caucasian,9298f4f73fcf272c4078e80e1f7ea5b1,Lab derived fibroblasts-clustered differently
+63_1,161103-SE75/Hetzer_Arkaitz/AI4_S4_R1_001.fastq.gz,47,AG12588,Normal,Male,63 YR,Skin; Arm,Caucasian,8fc403809c70e56f1e2fff4e4e935bc8,
+64_1,161103-SE75/Hetzer_Arkaitz/AI5_S5_R1_001.fastq.gz,48,AG13065,Normal,Male,64 YR,Skin; Arm,Caucasian,fb1f23687631f294ca5f0cd3328b22c6,
+64_2,160412-SE75/Hetzer_Robbie/AR21/E1_S21_R1_001.fastq.gz,150,64JW-APR1216,lab derived fibroblasts,Male,64yr,Skin; Arm,Caucasian,10b1780f7434e2ed480cf47f30427f1d,Lab derived fibroblasts-clustered differently
+66_1,161103-SE75/Hetzer_Arkaitz/AI6_S6_R1_001.fastq.gz,49,AG04461,Normal,Male,66 YR,Skin; Arm,Caucasian,293c17e664a01d81a46e671dbf69961f,
+66_2,170803_SE75/Hetzer_Robbie/RS12_S12_R1_001.fastq.gz,167,GM03529,Normal,Male,66yr,Skin; Thigh,Black,1660c6d6e5a44393c59a2db52b252497,
+66_ism,170803_SE75/Hetzer_Robbie/RS15_S15_R1_001.fastq.gz,187,167 iSM,iSM,Male,66 YR,Skin; Thigh,Black,a133c1b9c2b1b0d7fbac0f3e68cb0f64,induced smooth muscle -antibody selected
+67_1,161103-SE75/Hetzer_Arkaitz/AI7_S7_R1_001.fastq.gz,50,AG12599,Normal,Male,67 YR,Skin; Arm,Caucasian,4e070090498ad15f2301e41a6737424a,
+67_2,161103-SE75/Hetzer_Arkaitz/AI8_S8_R1_001.fastq.gz,51,AG13018,Normal,Male,67 YR,Skin; Arm,Caucasian,dccd47193d8bec4cf21407242f7f33bc,
+67_3,160419-SE75/Hetzer_Arkaitz/HT02/F1_S2_R1_001.fastq.gz,151,67LR-ARP1916,lab derived fibroblasts,Female,67yr,Skin; Arm,Caucasian,ecbc6d391cdc52df27a4030c9bd4b6a9,Lab derived fibroblasts-clustered differently
+67_4,170803_SE75/Hetzer_Robbie/RS8_S8_R1_001.fastq.gz,163,GM03524,Normal,Female,67 YR,Skin; Leg,Black,b699e7ef193c6a669c4c91219764900a,
+67_5,170803_SE75/Hetzer_Robbie/RS9_S9_R1_001.fastq.gz,164,AG16086,Normal,Female,67 YR,Skin; Arm,Filipino,93343240052811de6a43296f947c7755,
+68_1,161103-SE75/Hetzer_Arkaitz/AI9_S9_R1_001.fastq.gz,52,AG14251,Normal,Male,68 YR,Skin; Arm,Caucasian,6a2dff952672edd49dcfc332c5db03c5,
+68_2,161103-SE75/Hetzer_Arkaitz/AI10_S10_R1_001.fastq.gz,53,AG12850,Normal,Male,68 YR,Skin; Arm,Caucasian,44b7471faab5b494fe73aa87af329bbc,
+68_4,170802_SE75/Hetzer_Hannah/HT13_S13_R1_001.fastq.gz,168,GM03658,Normal,Male,68YR,Skin; Arm,Caucasian,e51d612ce07d6950efb73712760fac04,
+68_5,170803_SE75/Hetzer_Robbie/RS10_S10_R1_001.fastq.gz,165,AG12207,Normal,Male,68 YR,Skin; Arm,Unknown,3eb5bc3c2b204439e80990a89204a50d,
+68_ism,170802_SE75/Hetzer_Hannah/HT10_S10_R1_001.fastq.gz,176,53 iSM,iSM,Male,68 YR,Skin; Arm,Caucasian,b2f14132f6b76ad25e18f004588bbc3c,induced smooth muscle -antibody selected
+69_1,161103-SE75/Hetzer_Arkaitz/AI11_S11_R1_001.fastq.gz,54,AG12587,Normal,Male,69 YR,Skin; Arm,Caucasian,2d4d436ca96beb9d25053f27feb8df8e,
+69_2,161103-SE75/Hetzer_Arkaitz/AI12_S12_R1_001.fastq.gz,55,AG13144,Normal,Female,69 YR,Skin; Arm,Caucasian,06abd756acd344799c751ae67342419b,
+69_3,170802_SE75/Hetzer_Hannah/HT16_S16_R1_001.fastq.gz,170,AG16102,Normal,Male,69yr,Skin; Arm,Caucasian,b3281c9d3048c5e3b5e7a193c41b411b,
+70_1,170802_SE75/Hetzer_Hannah/HT14_S14_R1_001.fastq.gz,169,GM01681,Normal,Male,70yr,Skin; Arm,Caucasian,05fde12ed343bd546174853d96af11cc,
+70_ism,170802_SE75/Hetzer_Hannah/HT15_S15_R1_001.fastq.gz,188,169 iSM,iSM,Male,70 YR,Skin; Arm,Caucasian,4532196d1390c35ef101fb92d8fc3b3b,induced smooth muscle -antibody selected
+71_1,170302-SE75/Hetzer_Hannah/125_S18_R1_001.fastq.gz,125,GM01680,Normal,Female,71yr,Skin; Arm,Caucasian,da4c7873620c064e317ddf2386ef249a,
+75_1,170102-SE75/Hetzer_Toby/AI13_S18_R1_001.fastq.gz,126,GM08401,Normal,male,75yr,Skin; Unspecified,Caucasian,88e833eea8128d2af27cc839db7ea968,
+78_1,170302-SE75/Hetzer_Hannah/127_S19_R1_001.fastq.gz,127,GM09918,Normal,Male,78yr,Skin; Unspecified,Caucasian,1a23106076ebdd6c749cbc80e37d0450,
+78_2,170802_SE75/Hetzer_Hannah/HT8_S8_R1_001.fastq.gz,174,127 R for SM control,Control for iSM,Male,78yr,Skin; Unspecified,Caucasian,6d06fe7b05927909e89bd888f151ca93,These are controls for the smooth muscle; they were already included in age data  
+78_ism,170802_SE75/Hetzer_Hannah/HT11_S11_R1_001.fastq.gz,177,127 iSM,iSM,Male,78yr,Skin; Unspecified,Caucasian,9c1dc1249fa360779f20df89882c7f05,induced smooth muscle -antibody selected
+80_1,170302-SE75/Hetzer_Hannah/128_S20_R1_001.fastq.gz,128,GM3525,Normal,Female,80yr,Skin; Abdomen,Caucasian,31bfe6ad50a5276200ce68fae0756502,
+80_2,170802_SE75/Hetzer_Hannah/HT9_S9_R1_001.fastq.gz,175,128 R forSM control,Control for iSM,Female,80yr,Skin; Abdomen,Caucasian,d599697c1501add587cd566d2b5853d5,These are controls for the smooth muscle; they were already included in age data
+80_ism,170802_SE75/Hetzer_Hannah/HT12_S12_R1_001.fastq.gz,178,128 iSM,iSM,Female,80yr,Skin; Abdomen,Caucasian,de908cc6eacaa625ba7920affed510eb,induced smooth muscle -antibody selected
+82_1,170803_SE75/Hetzer_Robbie/RS11_S11_R1_001.fastq.gz,166,GM01706,Normal,Female,82yr,Skin; Arm,Caucasian,95469b7adeb2d35b154496148715ff13,
+83_1,161025-SE75/Hetzer_Arkaitz/HT14_S14_R1_001.fastq.gz,56,AG04386,Normal,Male,83yr,Skin; Arm,Caucasian,bf6799665ce9d0baab17a357c4c2a054,
+83_2,161025-SE75/Hetzer_Arkaitz/HT15_S15_R1_001.fastq.gz,57,AG05413,Normal,Male,83yr,Skin; Arm,Caucasian,32c93a71e0857a18f5ea3b3341e15231,
+83_3,161025-SE75/Hetzer_Arkaitz/HT16_S16_R1_001.fastq.gz,58,AG04457,Normal,Male,83yr,Skin; Arm,Caucasian,3ad8da7d3cae8ad097cf28740b29165e,
+84_1,161025-SE75/Hetzer_Arkaitz/HT17_S17_R1_001.fastq.gz,59,AG11725,Normal,Female,84yr,Skin; Arm,Caucasian,ccba2a66b4c786654b0330a870cb9f61,
+84_2,161025-SE75/Hetzer_Arkaitz/HT18_S18_R1_001.fastq.gz,60,AG06276,Normal,Male,84yr,Skin; Arm,Caucasian,46953e356439b3cca806e96352f58563,
+84_3,161025-SE75/Hetzer_Arkaitz/HT19_S19_R1_001.fastq.gz,61,AG11744,Normal,Female,84yr,Skin; Arm,Caucasian,ec4b413d68456157d6b1ec8412bc54db,
+84_4,161025-SE75/Hetzer_Arkaitz/HT20_S20_R1_001.fastq.gz,62,AG12947,Normal,Male,84yr,Skin; Arm,Caucasian,65ece0fea1d4304d110fb3f421a7c923,
+84_5,161025-SE75/Hetzer_Arkaitz/HT21_S21_R1_001.fastq.gz,63,AG05274,Normal,Male ,84yr,Skin; Arm,Caucasian,6464f1cc31c1ec7986408d95eacdc0a0,
+84_6,161025-SE75/Hetzer_Arkaitz/HT22_S22_R1_001.fastq.gz,64,AG11730,Normal,Male,84yr,Skin; Arm,Caucasian,21376a24f6cb0f3d7b556b96d779e64f,
+84_7,161025-SE75/Hetzer_Arkaitz/HT23_S23_R1_001.fastq.gz,65,AG04661,Normal,Male,84yr,Skin; Arm,Caucasian,5c09c3c03496af89bf25eaf90de11533,
+86_1,160615-SE50/Hetzer_Robbie/11F_S21_R1_001.fastq.gz,66,AG11748,Normal,Male ,86yr,Skin; Arm,Caucasian/Sardinian,8b3c9b6c63da15ecc6f45a6ce12e0d6b,
+86_2,160615-SE50/Hetzer_Robbie/16E_S84_R1_001.fastq.gz,68,AG13349,Normal,Male,86yr,Skin; Arm,caucasian,5e89e244f7a8b75f57e08fe479e1062e,
+86_3,160615-SE75/Hetzer_Toby/RJS6/126_9843_S6_R1_001.fastq.gz,134,AG09843,Normal,Male,86yr,Skin; Arm ,Caucasian,5800a04b38c456871be1abb59c562cb5,
+86_4,160617-SE50/Hetzer_Robbie/16D_S108_R1_001.fastq.gz,67,AG04143,Normal,Male,86yr,Skin; Arm,caucasian,133ae7fb8d1cfe8412533530732612b5,
+86_ism_sorted,170802_SE75/Hetzer_Hannah/HT5_S5_R1_001.fastq.gz,194,67 iSM sorted AG04143,iSM(sorted),Male,86yr,Skin; Arm,caucasian,04b84c4eb1dbeba9bc2589878f0c09c4,induced smooth muscle-sorted
+87_1,160615-SE50/Hetzer_Robbie/11A_S56_R1_001.fastq.gz,69,AG05247,Normal,Female,87yr,Skin; Arm,caucasian,6da8a62c78faf72cee51bd2c5af6d7fc,
+87_2,160615-SE50/Hetzer_Robbie/11E_S9_R1_001.fastq.gz,71,AG05248,Normal,Male,87yr,Skin; Arm,caucasian,a9e2c040f9c8e3596597b37df47ab041,
+87_2_ism_sorted,170802_SE75/Hetzer_Hannah/HT6_S6_R1_001.fastq.gz,195,72 iSM sorted AG11017,iSM(sorted),Male,87yr,Skin; Arm,Black,eb7e9b5801cd79f8fd66115db8dee54f,induced smooth muscle-sorted
+87_3,160615-SE50/Hetzer_Robbie/16B_S48_R1_001.fastq.gz,72,AG11017,Normal,Male,87yr,Skin; Arm,Black,920948dba802fd25b8779023ab4ed28c,
+87_4,160615-SE75/Hetzer_Toby/RJS3/123_4662_S3_R1_001.fastq.gz,131,AG04662,Normal,Male,87yr,Skin; Arm,Caucasian,8353f9c96a36162600c41c789c440688,
+87_5,160615-SE75/Hetzer_Toby/RJS8/128_1808_S8_R1_001.fastq.gz,136,AG11808,Normal,Male,87yr,Skin; Arm,Caucasian,e4998715ffa597802819f897acd3d658,
+87_6,160617-SE50/Hetzer_Robbie/11B_S104_R1_001.fastq.gz,70,AG10884,Normal,Male,87yr,Skin; Arm,caucasian,2f0f0c06162c0d01d54284caad34a371,
+87_ism_sorted,170802_SE75/Hetzer_Hannah/HT4_S4_R1_001.fastq.gz,193,70 iSM sorted AG10884,iSM(sorted),Male,87yr,Skin; Arm,caucasian,b2f4c0d5ccdaffc4255fc351ea758890,induced smooth muscle-sorted
+88_1,161025-SE75/Hetzer_Arkaitz/HT24_S24_R1_001.fastq.gz,73,AG04065,Normal,Male,88yr,Skin; Arm,Caucasian,8c6b54c99048d6b4c06fd0448bd1cb03,
+89_1,160615-SE50/Hetzer_Robbie/11D_S92_R1_001.fastq.gz,74,AG13129,Normal,Male,89yr,Skin; Arm,Caucasian,477cf09ecdb6fbf1434beeb0b108d915,
+89_2,160615-SE75/Hetzer_Toby/RJS2/122_3208_S2_R1_001.fastq.gz,130,AG13208,Normal,Male,89yr,skin; Arm,Caucasian,f326098dd4fd10fb6d27932aab158151,
+89_3,160615-SE75/Hetzer_Toby/RJS5/125_6308_S5_R1_001.fastq.gz,133,AG06308,Normal,Male,89yr,Skin; Arm,Caucasian,39ea6861d26877bf6a52edab413f358d,
+90_1,160615-SE50/Hetzer_Robbie/16A_S36_R1_001.fastq.gz,75,AG12788,Normal,Male,90yr,Skin; Arm,Caucasian,0b23a3a695e97baf7b8d4d396cd54374,
+90_2,160615-SE75/Hetzer_Toby/RJS4/124_6291_S4_R1_001.fastq.gz,132,AG06291,Normal,Male,90yr,Skin; Arm,Caucasian,bb7c4462479f31fb495ccaa5cdc3dacf,
+91_1,160615-SE50/Hetzer_Robbie/11C_S80_R1_001.fastq.gz,76,AG07725,Normal,Male,91yr,Skin; Arm,Caucasian,ee8c388db1cfdd44aa42d87ce672f257,
+92_1,160615-SE50/Hetzer_Robbie/16C_S60_R1_001.fastq.gz,77,AG09602,Normal,Female,92yr,Skin; Arm,Caucasian,5070e2f948559b4a270d57c12a6c9900,
+92_2,160615-SE75/Hetzer_Toby/RJS7/127_4064_S7_R1_001.fastq.gz,135,AG04064,Normal,Male,92yr,Skin; Arm ,Caucasian,eeebdd2dfafd521f4ab17b60180e7d69,
+92_ism_sorted,170802_SE75/Hetzer_Hannah/HT1_S1_R1_001.fastq.gz,190,77 iSM sorted AG09602,iSM(sorted),Female,92yr,Skin; Arm,Caucasian,139dde903f28960e034a75d7f8101dca,induced smooth muscle-sorted
+94_1,160615-SE75/Hetzer_Toby/RJS1/121_8433_S1_R1_001.fastq.gz,129,AG08433,Normal,Male,94yr,skin; Arm,Caucasian,5af4f7835ba4e660fd009fd5592075d8,
+96_1,160615-SE50/Hetzer_Robbie/16F_S96_R1_001.fastq.gz,78,AG04059,Normal,Male,96yr,Skin; Arm,Caucasian,ebedbc3a79e8d265b9c224f10cc97b80,
+DirectBiopsy_46y,160311-SE75/Hetzer_Arkaitz/C1_S21_R1_001.fastq.gz,215,MH direct biopsy,Direct Skin Biopsy,male,46yr,skin; arm,Caucasian,9e4933eaea5d2fd29cb942af1636fe8a,Martin direct biopsy
+DirectBiopsy_53y,170301-SE75/Hetzer_Hyeseon/HK19_S19_R1_001.fastq.gz,145,53AH4,Direct Skin Biopsy,Male,53yr,Skin; Arm,Unknown,85b63807d93ad0e3ec6a49e48efe9f89,Direct biopsy
+DirectBiopsy_68y,170222-SE75/Hetzer_Hannah/HT20_S20_R1_001.fastq.gz,144,68RS5,Direct Skin Biopsy,Female,68 YR,Skin; Arm,Caucasian,44bb45a19941fc8acf7ad3db0d85e83d,Direct biopsy
+HPGS_1,170222-SE75/Hetzer_Hannah/HT13_S13_R1_001.fastq.gz,137,AG11498,HGPS,Male,14yr,Skin; Thigh ,Black,5564e83e025beb998cfe1e6503fa88e8,Progeria
+HPGS_2,170222-SE75/Hetzer_Hannah/HT15_S15_R1_001.fastq.gz,139,AG11513,HGPS,Female,8yr,Skin; Leg,Caucasian,7e29d81c779153f56f33ac88d95062ef,Progeria
+HPGS_3,170222-SE75/Hetzer_Hannah/HT17_S17_R1_001.fastq.gz,141,PRF167,HGPS,Male,8yr,Skin; Unspecified,Unknown,e40618ce207a8bf246667903ed4666c3,Progeria
+HPGS_Ctrl_35y,170222-SE75/Hetzer_Hannah/HT16_S16_R1_001.fastq.gz,140,AG03257,Control for HGPS,Female,35yr,Skin; Arm,Caucasian,b036aa84db929ffcf7f8328188d36706,Control normal fibroblast non-related control for Progeria(RNA seq performed at same time)
+HPGS_Ctrl_36y,170222-SE75/Hetzer_Hannah/HT14_S14_R1_001.fastq.gz,138,AG03258,Control for HGPS,Male,36yr,Skin; Unspecified,Caucasian,b9db943e12f0702bb7eb4908f9f7ae13,Control normal fibroblast non-related control for Progeria(RNA seq performed at same time)
+HPGS_Ctrl_Father of PRF167,170222-SE75/Hetzer_Hannah/HT18_S18_R1_001.fastq.gz,142,PRF168,Relative of HGPS,Male,40yr,Skin; Unspecified,Unknown,5f9da72f84bf425c3dc2c583a3e02bf7,Father of PRF 167
+New Name,Original Name,Tracking ID,Coriell ID,Condition,Gender,Age,Tissue Type,Race/Ethnicity,md5sum,Lab notes
+,170822_SE75/Hetzer_Hannah/HT1_S1_R1_001.fastq.gz,197,HGADFN188,HGPS,Female,2yr3mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT2_S2_R1_001.fastq.gz,198,HGADFN127,HGPS,Female,3yr9mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT3_S3_R1_001.fastq.gz,199,HGADFN164,HGPS,Female,4yr8mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT4_S4_R1_001.fastq.gz,200,HGADFN169,HGPS,Male,8yr6mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT5_S5_R1_001.fastq.gz,201,HGADFN178,HGPS,Female,6yr11mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT6_S6_R1_001.fastq.gz,202,HGADFN122,HGPS,Female,5yr0mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT7_S7_R1_001.fastq.gz,203,HGADFN143,HGPS,Male,8yr10mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT8_S8_R1_001.fastq.gz,204,HGADFN367,HGPS,Female,3yr0mos,Skin; Unspecified,Unknown,,progeria
+,170822_SE75/Hetzer_Hannah/HT9_S9_R1_001.fastq.gz,205,HGMDFN368,Relative of HGPS,Female,31yr7mos,Skin; Unspecified,Unknown,,normal mother of 204_HGADFN367
+,160311-SE75/Hetzer_Arkaitz/HS1_S22_R1_001.fastq.gz,408,,Heated Direct Skin Biopsy,Male,46 YR,Skin Arm,Caucasian,,Direct biopsy with heat applied to arm
