@@ -64,5 +64,5 @@ This project is licensed under the BSD License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Aas always, we stand on the shoulders of giants.  This project would not have been possible without the  many developers of scikit-learn, scipy, numpy, pandas, seaborn, matplotlib, jupyter, and python.
+As always, we stand on the shoulders of giants.  This project would not have been possible without the  many developers of scikit-learn, scipy, numpy, pandas, seaborn, matplotlib, jupyter, and python.
 
