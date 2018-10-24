@@ -45,6 +45,8 @@ svregr = make_figs( 'Support vector regression', model=subsvr,
 
 Be aware that running the LDA ensemble from scratch will take many days of compute time, as documented in code comments.
 
+After training a model, e.g. ```linregr```, one might wish to examine the particular genes that meet subsetting criteria, which are used to predict age. This list of genes is in the class variable ```linregr.genecolumns_``` Similarly, one might wish to know how important a given gene is to creating the age prediction; this can be found in the class variable ```linregr.coef_```  which contains the linear coeficients that transform the FPKM vector (arranged in the order specified in ```genecolumns_```) into an age prediction for a given subject. For the ensemble, the genes used are in ```ensemble.genecolumns_```.  The importance of each gene to an age prediction is more difficult to understand in an ensemble, since there are N classifiers in the ensemble, and each has coefficients for M = ceil( ( subject_age_range / N ) classes. Thus  ```ensemble.classifiers_[X].coef_[Y]```, where X &isin; [0,N) and Y &isin; [0,M), contains the linear coeficients that transform the FPKM vector into a confidence score that classifier X would assign this subject to class Y. A subject is assigned to the class with the highest such confidence score.  For further details see the documentation and source code for LinearDiscriminantAnalysis in scikit-learn.
+
 ### Code structure
 
 * A custom function handles the loading of the FPKM and metadata.
