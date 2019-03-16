@@ -1,7 +1,11 @@
 # Predicting-age-from-the-transcriptome-of-human-dermal-fibroblasts
 
-This project generates Figure 2 from the paper "Predicting age from the transcriptome of human dermal fibroblasts", in sumbission, 2018.
+This project generates Figure 2 from the paper "Predicting age from the transcriptome of human dermal fibroblasts", in sumbission, 2018. (Generate panels for figure.ipynb)
 
+There are also notebooks that allow you either train new ensembles on your own data (Train your own predictor on your data.ipynb) pr to try to use ensembles trained on our data to predict age in your own data (Run a pre-trained predictor on your own data.ipynb). In general I expect that training your own ensemble will work well if you have skin fibroblast RNA-seq data from at least 3 people per decade spanning an age range from 0 to 70 years.  I generally expect that batch effects will dominate and prevent good predictions if you try to use one of my pre-trained classifiers, but I am always happy to be proved wrong and it's easy to do, so why not try?.  Each of these notebooks has detailed instructions and explanations inside.
+
+PLEASE NOTE: I am now using git lfs to handle the large binary files of pre-trained ensembles.  To clone this repository you must first install [git lfs on your own computer buy clicking on this link](https://git-lfs.github.com).  If you have previously cloned this repository and need to update your repository to include the newly added LFS files, first install git lfs, and then do ```git lfs fetch``` inside the repository.
+ 
 ## Abstract
 There is a marked heterogeneity in human lifespan and health outcomes for people of the same chronological age. Thus, one fundamental challenge is to identify molecular and cellular biomarkers of aging that could predict lifespan and be useful in evaluating lifestyle changes and therapeutic strategies in the pursuit of healthy aging. Here, we developed a computational method to predict biological age from gene expression data in skin fibroblast cells using an ensemble of machine learning classifiers. We generated an extensive RNA-seq dataset of fibroblast cell lines derived from 133 healthy individuals whose ages range from 1 to 94 years, and 10 patients with Hutchinson-Gilford Progeria Syndrome (HGPS), a premature aging disease. On this dataset, our method predicted chronological age with a median error of 4 years, outperforming algorithms proposed by prior studies that predicted age from DNA methylation [1–5] and gene expression data [3,6] for fibroblasts. Importantly, our method consistently predicted higher ages for Progeria patients compared to age-matched controls, suggesting that our algorithm can identify accelerated aging in humans. These results show that the transcriptome of skin fibroblasts retains important age-related signatures. Our computational tool may also be applicable to predicting age from other genome-wide datasets.
 
@@ -22,12 +26,16 @@ While it may work with different versions of these packages, the software was te
 * Jupyter notebook 5.0.0
 * Python 2.7.9
 * Pandas 0.22
-* Scipy 0.19
+* Sklearn 0.19 for the Generate panels notebook, 0.20 for the others 
 * Matplotlib 2.1.0
 * Seaborn 0.7.1
 
 
-### Using this software
+### Using this software to try to predict age from your own data
+
+Open one of the notebooks (Train your own or Run pre-trained) and follow the detailed instructions inside.
+ 
+### Using this software to regenerate the figures of the paper
 
 Open the notebook "Generate panels for figure.ipynb" in Jupyter.
 
