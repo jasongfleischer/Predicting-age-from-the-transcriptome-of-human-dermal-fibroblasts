@@ -1,1 +1,0 @@
-this is the directory that will hold ensembles trained on the Hetzer lab data using various different ways of representing variables (transcript or gene) and FPKM or quantile or rank normalizations
