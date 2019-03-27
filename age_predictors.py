@@ -37,7 +37,7 @@ flatten = lambda l: pd.Series([item for sublist in l for item in sublist])
  
 class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
     
-    def __init__(self, clf=None, class_size=20, subset_min=0, subset_fold=0, dataxform_log=False, dataxform_fpkmToTpm=False, dataxform_rank=False, dataxform_quantile=False, verbose=False):
+    def __init__(self, clf=None, class_size=20, subset_min=0, subset_fold=0, dataxform_log=False, dataxform_fpkmToTpm=False, dataxform_rank=False, dataxform_quantile=False, verbose=False, seed=42):
         assert ( int(dataxform_rank) + int(dataxform_quantile) < 2), "We can only do one of rank and quantile normalization, not both" 
         self.subset_min = subset_min
         self.subset_fold = subset_fold
@@ -48,6 +48,7 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         self.clf = clf
         self.class_size = class_size
         self.verbose = verbose
+        self.seed = seed
         
     def _fpkmToTpm(self, fpkm):
         # takes ndarray, assumes rows are samples, columns are genes
@@ -150,13 +151,22 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
 
     def _trim_bytes(self):
         # make the ensemble smaller for binary dump by deleting things needed only for training and analysis
-        # keep all the stuff thats needed for predicting with a trained classifier
+        # keep all the stuff thats needed for predicting with a trained classifier -- about 3.5 - 4GB for an LDA ensemble
         for a_clf in self.classifiers_:
             del a_clf.covariance_
     
         del self.train_data_
         del self.train_label_
 
+    def _trim_classifiers(self):
+        # make the ensemeble TRULY small for binary dump by deleting the classifiers themselves
+        # but by keeping all the training data and settings the classifier can be reinstantiated with refit()
+        del self.classifiers_
+        
+    def refit(self):
+        check_is_fitted(self, 'train_data_')
+        check_is_fitted(self, 'train_label_')
+        self.fit( self.train_data_, self.train_label_, verbose=False, these_genes=self.genecolumns_ )
         
     def predict(self, X):
         check_is_fitted(self, 'genecolumns_')
@@ -208,6 +218,9 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         check_is_fitted(self, 'dataxform_fpkmToTpm')
         check_is_fitted(self, 'dataxform_rank')
         check_is_fitted(self, 'dataxform_quantile')
+
+        np.random.seed(self.seed) # this is needed for reproducability of results for classifiers that use a random number generator
+        # this seed can be modified during ensemeble initialization, if no argument is set seed defaults to The Answer to Life, The Universe, and Everything 
 
         if self.dataxform_quantile:
             self.qtrans_ = QuantileTransformer().fit(X)

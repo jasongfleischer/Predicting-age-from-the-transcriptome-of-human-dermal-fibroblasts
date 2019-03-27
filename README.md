@@ -1,6 +1,6 @@
 # Predicting-age-from-the-transcriptome-of-human-dermal-fibroblasts
 
-This project generates Figure 2 from the paper "Predicting age from the transcriptome of human dermal fibroblasts", in sumbission, 2018. (Generate panels for figure.ipynb)
+This project generates Figure 2 from the paper "Predicting age from the transcriptome of human dermal fibroblasts", Genome Biology, 2018. (Generate panels for figure.ipynb)
 
 There are also notebooks that allow you either train new ensembles on your own data (Train your own predictor on your data.ipynb) pr to try to use ensembles trained on our data to predict age in your own data (Run a pre-trained predictor on your own data.ipynb). In general I expect that training your own ensemble will work well if you have skin fibroblast RNA-seq data from at least 3 people per decade spanning an age range from 0 to 70 years.  I generally expect that batch effects will dominate and prevent good predictions if you try to use one of my pre-trained classifiers, but I am always happy to be proved wrong and it's easy to do, so why not try?.  Each of these notebooks has detailed instructions and explanations inside.
 
