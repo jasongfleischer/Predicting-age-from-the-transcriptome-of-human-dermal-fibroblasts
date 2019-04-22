@@ -420,3 +420,157 @@ class subset_genes_LinRegr(LinearRegression):
         X_sub = self._subset_genes(X, verbose=True, these_genes=self.genecolumns_)
 
         return super(subset_genes_LinRegr, self).predict(X_sub)
+
+
+
+class subset_genes_ElasticNet(ElasticNet):
+    
+    def __init__(self, subset_min=0, subset_fold=0, dataxform_log=False, dataxform_fpkmToTpm=False, dataxform_rank=False, dataxform_quantile=False, verbose=False, seed=42,  alpha=1.0, l1_ratio=0.5, fit_intercept=True,
+                 normalize=False, precompute=False, max_iter=1000,
+                 copy_X=True, tol=1e-4, warm_start=False, positive=False,selection='cyclic'):
+        assert ( int(dataxform_rank) + int(dataxform_quantile) < 2), "We can only do one of rank and quantile normalization, not both" 
+        self.subset_min = subset_min
+        self.subset_fold = subset_fold
+        self.dataxform_log = dataxform_log
+        self.dataxform_fpkmToTpm = dataxform_fpkmToTpm
+        self.dataxform_rank = dataxform_rank
+        self.dataxform_quantile = dataxform_quantile
+        self.verbose = verbose
+        self.seed = seed
+       super(subset_genes_ElasticNet, self).__init__(
+                 alpha=alpha, l1_ratio=l1_ratio, fit_intercept=fit_intercept,
+                 normalize=normalize, precompute=precompute, max_iter=max_iter,
+                 copy_X=copy_X, tol=tol, warm_start=warm_start, positive=positive,
+                 random_state=seed, selection=selection )
+        
+    def _fpkmToTpm(self, fpkm):
+        # takes ndarray, assumes rows are samples, columns are genes
+        # turns fpkm into tpm - following https://haroldpimentel.wordpress.com/2014/05/08/what-the-fpkm-a-review-rna-seq-expression-units/
+        return np.exp( np.log(fpkm) - np.log(fpkm.sum(axis=1).reshape(-1,1).repeat(fpkm.shape[1],axis=1)) + np.log(1e6))
+   
+    
+    def _expr_levels(self, data):
+        # note the order of the if statements implies the order of execution for combinations of transforms
+        # only rank and quantile are not allowed simultaneously via assertion in __init__
+        d=data.copy()
+        if self.dataxform_fpkmToTpm:
+            d = self._fpkmToTpm(d)
+        if self.dataxform_rank:
+            d = d.rank(axis=1)
+        if self.dataxform_log:
+            d = np.log2(d + 1.)
+        if self.dataxform_quantile:
+            check_is_fitted(self, 'qtrans_')
+            if self.qtrans_.quantiles_.shape[1] == d.shape[1]:
+                # if the xformer was fit on the same size data, asssume it matches up
+                d = self.qtrans_.transform(d)
+                d = pd.DataFrame( d, index=data.index, columns=data.columns)
+            else:
+                # do it gene by gene where the genes match up between this data and training data
+                tmp = {}
+                keep = np.copy(self.qtrans_.quantiles_)
+                qt = self.qtrans_
+                for agene in np.intersect1d( self.qdict_.keys(), d.columns):
+                    qt.quantiles_ = self.qdict_[agene]
+                    tmp[agene] = flatten(  qt.transform( d.loc[:,agene].values.reshape(-1, 1) )  )
+                    #reshape because this is a single feature and sklearn expects this
+                    # but then flatten because otherwise dataframe creation barfs
+                d = pd.DataFrame( tmp )
+                d.index = data.index
+                qt.quantiles_ = keep # return qt to its original state
+                    
+        
+        return d
+        
+    # this version of subset genes assumes data is ONLY genes with no metadata columns in a pd.DataFrame 
+    def _subset_genes(self, data, verbose=False, these_genes=np.array(False) ):
+        
+        calc_subset = True
+        if these_genes.any(): # just get these_genes, without calculating
+            calc_subset = False
+        else: # calculate the these_genes list based on the other parameters    
+            genes = data  # operate selection criteria on non-transformed FPKM
+            eps = 0.001
+            has_start_gt = genes > self.subset_min
+            mvt = genes.min()
+            mvt[ mvt<eps ] = eps
+            has_fold_change = (genes.max() / mvt)  > self.subset_fold            
+            aset = (has_start_gt.any(axis=0) & has_fold_change)
+            these_genes = aset[ aset ].index # get list of gene names that meet criteria
+            
+        genes = self._expr_levels(data) # do the final op on user-selected xform
+            
+        subgenes = genes.loc[:,genes.columns.intersection(these_genes)]
+
+        if verbose & calc_subset:
+            print 'using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold)
+
+        if (not calc_subset) & (subgenes.shape[1] < len(these_genes)):
+            print 'warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes))
+            missing = np.setdiff1d( these_genes, subgenes.columns)
+            if verbose: 
+                print missing
+            for amiss in missing:
+                subgenes[amiss] = 0.0
+
+        subgenes =  subgenes.sort_index(axis=1)  # need to enforce constant variable order
+        # especially now that we allow missing variables in subset_genes
+        
+        return subgenes
+
+        
+
+    def predict(self, X):
+        """Perform regression on samples in X.
+        For an one-class model, +1 (inlier) or -1 (outlier) is returned.
+        Parameters
+        ----------
+        X : {array-like, sparse matrix}, shape (n_samples, n_features)
+            For kernel="precomputed", the expected shape of X is
+            (n_samples_test, n_samples_train).
+        Returns
+        -------
+        y_pred : array, shape (n_samples,)
+        """
+        check_is_fitted(self, 'genecolumns_')
+        X_sub = self._subset_genes(X, these_genes=self.genecolumns_)
+        #X_sub = super(subset_genes_LinRegr, self)._validate_for_predict(X_sub)
+        return super(subset_genes_ElasticNet, self).predict(X_sub)
+    
+    def fit(self, X, y, verbose=False, these_genes=np.array(False)):
+        check_is_fitted(self, 'subset_min')
+        check_is_fitted(self, 'subset_fold')
+        check_is_fitted(self, 'dataxform_log')
+        check_is_fitted(self, 'dataxform_fpkmToTpm')
+        check_is_fitted(self, 'dataxform_rank')
+        check_is_fitted(self, 'dataxform_quantile')
+
+        np.random.seed(self.seed) # this is needed for reproducability of results for classifiers that use a random number generator
+        # this seed can be modified during ensemeble initialization, if no argument is set seed defaults to The Answer to Life, The Universe, and Everything 
+
+        if self.dataxform_quantile:
+            self.qtrans_ = QuantileTransformer().fit(X)
+            self.qdict_ = {} #keeping this dictionary will allow us to fit gene by gene later
+            # which will be useful for cases when we try to predict with a different dataset than the fitting set
+            for k, agene in enumerate(X.columns):
+                self.qdict_[agene] = self.qtrans_.quantiles_[:,k].reshape(-1,1) #reshape because this is a single feature and sklearn expects this
+            
+        if these_genes.any(): # use the given subset
+            X_sub = self._subset_genes(X, verbose=self.verbose, these_genes=these_genes)
+        else: # train the gene subset on this data too
+            X_sub = self._subset_genes(X, verbose=self.verbose)
+        
+        self.genecolumns_ = X_sub.columns
+        self.train_data_ = X_sub
+        self.train_label_ = y
+
+        super(subset_genes_ElasticNet, self).fit(X_sub, y)
+
+        return self
+
+    def predict(self, X):
+        check_is_fitted(self, 'genecolumns_')
+        
+        X_sub = self._subset_genes(X, verbose=True, these_genes=self.genecolumns_)
+
+        return super(subset_genes_ElasticNet, self).predict(X_sub)
