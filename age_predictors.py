@@ -425,9 +425,7 @@ class subset_genes_LinRegr(LinearRegression):
 
 class subset_genes_ElasticNet(ElasticNet):
     
-    def __init__(self, subset_min=0, subset_fold=0, dataxform_log=False, dataxform_fpkmToTpm=False, dataxform_rank=False, dataxform_quantile=False, verbose=False, seed=42,  alpha=1.0, l1_ratio=0.5, fit_intercept=True,
-                 normalize=False, precompute=False, max_iter=1000,
-                 copy_X=True, tol=1e-4, warm_start=False, positive=False,selection='cyclic'):
+    def __init__(self, subset_min=0, subset_fold=0, dataxform_log=False, dataxform_fpkmToTpm=False, dataxform_rank=False, dataxform_quantile=False, verbose=False, seed=42,  alpha=1.0, l1_ratio=0.5, fit_intercept=True, normalize=False, precompute=False, max_iter=1000, copy_X=True, tol=1e-4, warm_start=False, positive=False,selection='cyclic'):
         assert ( int(dataxform_rank) + int(dataxform_quantile) < 2), "We can only do one of rank and quantile normalization, not both" 
         self.subset_min = subset_min
         self.subset_fold = subset_fold
@@ -437,7 +435,7 @@ class subset_genes_ElasticNet(ElasticNet):
         self.dataxform_quantile = dataxform_quantile
         self.verbose = verbose
         self.seed = seed
-       super(subset_genes_ElasticNet, self).__init__(
+        super(subset_genes_ElasticNet, self).__init__(
                  alpha=alpha, l1_ratio=l1_ratio, fit_intercept=fit_intercept,
                  normalize=normalize, precompute=precompute, max_iter=max_iter,
                  copy_X=copy_X, tol=tol, warm_start=warm_start, positive=positive,
