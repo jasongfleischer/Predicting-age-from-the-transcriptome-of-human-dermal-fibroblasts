@@ -110,13 +110,13 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         subgenes = genes.loc[:,genes.columns.intersection(these_genes)]
 
         if verbose & calc_subset:
-            print 'using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold)
+            print('using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold))
 
         if (not calc_subset) & (subgenes.shape[1] < len(these_genes)):
-            print 'warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes))
+            print('warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes)))
             missing = np.setdiff1d( these_genes, subgenes.columns)
             if verbose: 
-                print missing
+                print(missing)
             for amiss in missing:
                 subgenes[amiss] = 0.0
 
@@ -249,7 +249,7 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         for offset in range(0,self.class_size):  
             
             if verbose:
-                print "ensemble member #{}".format(offset)
+                print("ensemble member #{}".format(offset))
                 
             a_clf = clone(self.clf)
             
@@ -349,13 +349,13 @@ class subset_genes_LinRegr(LinearRegression):
         subgenes = genes.loc[:,genes.columns.intersection(these_genes)]
 
         if verbose & calc_subset:
-            print 'using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold)
+            print('using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold))
 
         if (not calc_subset) & (subgenes.shape[1] < len(these_genes)):
-            print 'warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes))
+            print('warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes)))
             missing = np.setdiff1d( these_genes, subgenes.columns)
             if verbose: 
-                print missing
+                print(missing)
             for amiss in missing:
                 subgenes[amiss] = 0.0
 
@@ -501,13 +501,13 @@ class subset_genes_ElasticNet(ElasticNet):
         subgenes = genes.loc[:,genes.columns.intersection(these_genes)]
 
         if verbose & calc_subset:
-            print 'using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold)
+            print('using {} genes in subset requiring a max FPKM > {} and > {}-fold change between max and min samples '.format(len(these_genes), self.subset_min, self.subset_fold))
 
         if (not calc_subset) & (subgenes.shape[1] < len(these_genes)):
-            print 'warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes))
+            print('warning: only {} of {} requested genes present in data during subsetting; filling with 0.0'.format(subgenes.shape[1],len(these_genes)))
             missing = np.setdiff1d( these_genes, subgenes.columns)
             if verbose: 
-                print missing
+                print(missing)
             for amiss in missing:
                 subgenes[amiss] = 0.0
 
