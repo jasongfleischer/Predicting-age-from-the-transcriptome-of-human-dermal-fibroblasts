@@ -1,3 +1,9 @@
+# let's be brutally honest here.  I wrote all this before I understood sklearn Pipelines.
+# if I had understood I could have saved myself a lot of trouble.
+# a really great student short project would be to replace the gene subsetting system with a custom
+# transformation and then just stick it in a Pipeline with whatever you want
+# JGF July 2021
+
 from __future__ import division
 
 import pandas as pd
@@ -13,7 +19,8 @@ from sklearn.metrics import accuracy_score as score_ACC
 from sklearn.linear_model import LinearRegression, ElasticNet
 from sklearn.svm import SVR
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.preprocessing import QuantileTransformer
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import QuantileTransformer, LabelEncoder
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -128,25 +135,25 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
     def _get_bounds(self, minimum,maximum,offset):
 
         interval = self.class_size
-        done = False;
-        lower = minimum;
+        done = False
+        lower = minimum
         while (not done):
             if (lower==minimum):
                 if (offset>0):
-                    upper = lower+offset;
+                    upper = lower+offset
                 else:
-                    upper = lower+interval;
+                    upper = lower+interval
 
-                bounds = np.array([[lower,upper-1]]);
-                lower = upper;
-                continue;
+                bounds = np.array([[lower,upper-1]])
+                lower = upper
+                continue
             else:
-                upper = min(lower+interval,maximum+1);
+                upper = min(lower+interval,maximum+1)
 
-            done = upper>maximum;
-            bounds = np.append(bounds,[[lower,upper-1]],axis=0);
+            done = upper>maximum
+            bounds = np.append(bounds,[[lower,upper-1]],axis=0)
 
-            lower = upper;
+            lower = upper
         return bounds;
 
     def _trim_bytes(self):
@@ -173,6 +180,7 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         check_is_fitted(self, 'classifiers_')
         check_is_fitted(self, 'bounds_')
         check_is_fitted(self, 'class_names_')
+        check_is_fitted(self, 'label_encoder_')
         
         X_sub = self._subset_genes(X, verbose=True, these_genes=self.genecolumns_)
 
@@ -187,7 +195,8 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
             bounds = self.bounds_[offset]
             class_names = self.class_names_[offset]
             
-            predictions = a_clf.predict(X_sub);
+            predictions = self.label_encoder_[offset].inverse_transform( 
+                a_clf.predict(X_sub) )
 
             """        
             Each vote for age i is stored as an single instance of integer i 
@@ -198,11 +207,11 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
             for k, class_predict in enumerate(predictions):
                 
                 # Generate constituent integer ages from the predicted age class
-                bnd_predict = bounds[class_names == class_predict][0];
-                this_vote = np.arange(bnd_predict[0],bnd_predict[1]+1,1);
+                bnd_predict = bounds[class_names == class_predict][0]
+                this_vote = np.arange(bnd_predict[0],bnd_predict[1]+1,1)
 
                 # Store predicted integer ages
-                votes[k] = np.append(votes[k],this_vote);
+                votes[k] = np.append(votes[k],this_vote)
 
         # Take the mode (or median or mean or some more elaborate voting scheme if you like) integer predicted age
         # as the final predicted age
@@ -240,10 +249,11 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
         self.classifiers_ = []
         self.bounds_ = []
         self.class_names_ = []
+        self.label_encoder_ = []
         
-        n_samp = len(y);
-        age_min = min(y);
-        age_max = max(y);
+        n_samp = len(y)
+        age_min = min(y)
+        age_max = max(y)
 
         # For each partitioning of the output space, create a member of the ensemble
         for offset in range(0,self.class_size):  
@@ -253,22 +263,26 @@ class subset_genes_ensemble(BaseEstimator, ClassifierMixin):
                 
             a_clf = clone(self.clf)
             
-            bounds = self._get_bounds(age_min,age_max,offset);
-            n_classes = len(bounds);
-            train_class = np.empty(n_samp,dtype=object);
+            bounds = self._get_bounds(age_min,age_max,offset)
+            n_classes = len(bounds)
+            train_class = np.empty(n_samp,dtype=object)
             class_names = np.empty(n_classes,dtype=object)
 
             for i in range(0,n_classes):
                 lower = bounds[i][0];
                 upper = bounds[i][1];
-                class_names[i] = str(lower) + '-' + str(upper);
-                in_class = np.logical_and(y>=lower,y<=upper);
-                train_class[in_class] = class_names[i];
+                class_names[i] = str(lower) + '-' + str(upper)
+                in_class = np.logical_and(y>=lower,y<=upper)
+                train_class[in_class] = class_names[i]
+            
+            lenc = LabelEncoder().fit(train_class)
+            targets = lenc.transform(train_class)
 
-            a_clf.fit(X_sub,train_class);
+            a_clf.fit(X_sub,targets)
             self.classifiers_.append(a_clf)
             self.bounds_.append(bounds)
             self.class_names_.append(class_names)
+            self.label_encoder_.append(lenc)
             
         return self
 
